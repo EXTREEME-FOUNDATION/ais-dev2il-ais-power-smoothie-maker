@@ -6,7 +6,7 @@ import pyjokes
 
 def get_ingredients(recipe_file: Path) -> list[str]:
     if not recipe_file.exists():
-        return []
+        raise FileNotFoundError(f"The file {recipe_file} does not exist.")
     with open(recipe_file, "r") as f:
         return [line.strip() for line in f.readlines() if line.strip()]
 
