@@ -4,5 +4,6 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.14"
 dependencies = [
+    "pyjokes>=0.8.3",
     "rich>=14.3.3",
 ]
